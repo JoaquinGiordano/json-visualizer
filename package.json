@@ -1,0 +1,16 @@
+{
+    "name": "json-visualizer",
+    "version": "1.0.0",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "build-win32-x64": "electron-packager . json-visualizer --prune=true --out=builds --platform=win32 --arch=x64 --icon=src/icon.ico --asar=true",
+        "build-win32-x32": "electron-packager . json-visualizer --prune=true --out=builds --platform=win32 --arch=i32 --icon=src/icon.ico --asar=true",
+        "build-mac": "electron-packager . json-visualizer --prune=true --out=builds --platform=darwin --arch=x64 --icon=src/icon.ico --asar=true",
+        "build-linux": "electron-packager . json-visualizer --prune=true --out=builds --platform=linux --arch=x64 --icon=src/icon.ico --asar=true"
+    },
+    "dependencies": {
+        "electron": "^2.0.2",
+        "electron-packager": "^12.1.0"
+    }
+}

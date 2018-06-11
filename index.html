@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JSON Visualizer</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div id="top_bar">
+        <div>
+            <p>Method:</p><input id="method_input" type="text">
+            <p>URL:</p><input id="url_input" type="text">
+            <p>Request:</p><input id="request_input" type="text">
+            <button id="load_btn" onclick="app.start();">Load</button>
+          </div>   
+          <br>
+        <br>  
+        <p id="status_p"></p>
+        
+           
+    </div>
+
+    
+    <table id="table" style="width:100%">
+      </table>
+</body>
+<script src="js/index.js"></script>
+</html>

@@ -1,0 +1,66 @@
+html,body{
+    margin: 0;
+}
+
+*{
+    font-family: segoe ui;
+}
+
+button{
+    float: left;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 2px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: #da0036;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #e7003a;
+}
+
+#top_bar{
+    height: 70px;
+    padding: 10px;
+    color: white;
+    background: #ff0040;
+}
+
+#status_p{
+    padding: 0;
+    margin: 0;
+}
+
+#top_bar p{
+    float: left;
+    margin-top: 3px;
+    margin-left: 10px;
+    margin-right: 4px;
+}
+
+#top_bar input{
+    float: left;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 2px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 5px;
+    background: #da0036;
+}
+
+#table{
+    padding: 10px;
+    text-align: center;
+}
