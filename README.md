@@ -1,3 +1,6 @@
+
+<img src="https://joaquingiordano.github.io/json-visualizer/src/icon.png"></img>
+
 # json-visualizer
 > Observa tus archivos JSON de una manera mas atractiva
 
@@ -8,11 +11,9 @@ Simplemente ingresa los datos en la parte superior de la ventana y presiona el b
 ## Instalación
 ```
     npm install
-
 ```
 
 ## Ejecutar
 ```
     npm start
-
 ```
