@@ -10,7 +10,9 @@
         "build-linux": "electron-packager . json-visualizer --prune=true --out=builds --platform=linux --arch=x64 --icon=src/icon.ico --asar=true"
     },
     "dependencies": {
-        "electron": "^2.0.2",
         "electron-packager": "^12.1.0"
+    },
+    "devDependencies": {
+        "electron": "^2.0.10"
     }
 }
