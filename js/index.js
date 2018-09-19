@@ -15,7 +15,7 @@ class App{
     }
 
     requestData({method,url,request}){
-        
+
         const xhr = new XMLHttpRequest()
         xhr.open(method,url,true);
         xhr.addEventListener('load', (e) =>{
@@ -30,11 +30,18 @@ class App{
     loadTable(data, request){
         const table = document.querySelector('#table');
         table.innerHTML += `<tr id="tr_fields"></tr>`;
-        request.forEach((e) => {
-            const tr_fields = document.querySelector('#tr_fields')
-            tr_fields.innerHTML += `<th>${e}</th>`;
-        });
-        
+        if(request[0] != '*' && request[0] != '' && request[0] != undefined){
+            request.forEach((e) => {
+                const tr_fields = document.querySelector('#tr_fields')
+                tr_fields.innerHTML += `<th>${e}</th>`;
+            });
+        }else{
+            request = Object.getOwnPropertyNames(data[0]);
+            request.forEach((e) => {
+                const tr_fields = document.querySelector('#tr_fields')
+                tr_fields.innerHTML += `<th>${e}</th>`;
+            });
+        }        
         data.forEach((e) =>{
             table.innerHTML += `<tr class="tr_data"></tr>`;
             var tr_data = document.getElementsByClassName('tr_data')[this.num];
